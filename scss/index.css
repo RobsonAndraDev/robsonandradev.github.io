@@ -54,7 +54,10 @@ header a, footer a {
   height: 230px;
   border-radius: 6px; }
 
-p {
+.floatLeft {
   float: left; }
+
+.mainDescription {
+  width: 770px; }
 
 /*# sourceMappingURL=index.css.map */
