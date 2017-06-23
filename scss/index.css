@@ -49,4 +49,9 @@ header a, footer a {
 #contentArticle #addTag, #contentArticle input[type=submit] {
   float: left; }
 
+#imgProfile {
+  width: 230px;
+  height: 230px;
+  border-radius: 6px; }
+
 /*# sourceMappingURL=index.css.map */
