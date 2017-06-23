@@ -54,4 +54,7 @@ header a, footer a {
   height: 230px;
   border-radius: 6px; }
 
+p {
+  float: left; }
+
 /*# sourceMappingURL=index.css.map */
