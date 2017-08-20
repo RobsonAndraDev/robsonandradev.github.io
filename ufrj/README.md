@@ -6,10 +6,14 @@ práticas sociais. Usos da linguagem. Reconhecimento crítico das linguagens com
 Relações de sinonímia e antonímia. Classe e emprego de palavras. Frase, oração e período. Período composto (coordenação e subordinação). Regência nominal e verbal. Concordância
 nominal e verbal. Colocação pronominal. Ortografia, acentuação gráfica e pontuação.
 ### Legislação:
-Lei Federal no 12.527/2011. Decreto Federal no 7.724/2012. Decreto no 1.171/1994. Lei Federal no 8.666/1993. Lei Federal no 9.784/1999. Constituição Federal de 1988: Título I. Título II. Título III, capítulo I e capítulo VII (Seções I e II). Título VIII, capítulo III (Seção I). Princípios Constitucionais Explícitos. Princípios Constitucionais Implícitos. Administração Pública Direta e Indireta.
+Lei Federal 8.112/1990. Lei Federal no 12.527/2011. Decreto Federal no 7.724/2012. Decreto no 1.171/1994. Lei Federal no 8.666/1993. Lei Federal no 9.784/1999. Constituição Federal de 1988: Título I. Título II. Título III, capítulo I e capítulo VII (Seções I e II). Título VIII, capítulo III (Seção I). Princípios Constitucionais Explícitos. Princípios Constitucionais Implícitos. Administração Pública Direta e Indireta.
 ## CONTEÚDOS PROGRAMÁTICOS COMUNS AOS CARGOS DE ASSISTENTE EM ADMINISTRAÇÃO (GERAL E COMPLEXO HOSPITALAR):
 ### Noções de Informática:
-Conceitos e principais comandos e funções de sistemas operacionais. Noções de aplicativos de edição de textos e planilhas. Conceitos de Internet, Intranet e Extranet. Noções básicas de tecnologias, ferramentas, aplicativos e procedimentos associados à Internet e Intranet. Noções de segurança e proteção. Conceitos básicos e utilização de ferramentas e aplicativos de navegação e correio eletrônico.
+Conceitos e principais comandos e funções de sistemas operacionais Windows e Linux.
+Noções de aplicativos de edição de textos e planilhas Microsoft Office e LibreOffice.
+Conceitos de Internet, Intranet e Extranet. Noções básicas de tecnologias, ferramentas,
+aplicativos e procedimentos associados à Internet e Intranet. Noções de segurança e proteção.
+Conceitos básicos e utilização de ferramentas e aplicativos de navegação e correio eletrônico.
 ### Raciocínio Lógico:
 Estruturas lógicas. Lógica de argumentação. Diagramas lógicos. Princípios de contagem e probabilidade. Operações com conjuntos. Razão e proporção. Regra de três simples e composta. Cálculos com porcentagem. Juros simples e compostos.
 
