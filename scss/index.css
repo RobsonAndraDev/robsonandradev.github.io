@@ -52,7 +52,7 @@ header a, footer a {
 #imgProfile {
   width: 100px;
   height: 100px;
-  margin-left: 6px;
+  margin-right: 6px;
   border-radius: 6px; }
 
 .floatLeft {
