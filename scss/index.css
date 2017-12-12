@@ -50,8 +50,8 @@ header a, footer a {
   float: left; }
 
 #imgProfile {
-  width: 230px;
-  height: 230px;
+  width: 100px;
+  height: 100px;
   border-radius: 6px; }
 
 .floatLeft {
