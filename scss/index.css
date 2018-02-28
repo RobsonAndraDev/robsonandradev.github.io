@@ -1,7 +1,8 @@
 /*** Variables ***/
 /** Start show **/
 body {
-  font: 14px "Georgia", "Verdana"; }
+  font: 14px 'Lora', 'PT Serif', 'Sumana', serif;
+}
 
 header {
   padding-top: 7px;
