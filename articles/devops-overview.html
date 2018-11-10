@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <title>DevOps Visão Geral</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.min.css">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|PT+Serif|Sumana" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Robson Andrade</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Profissional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Artigos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>DevOps Visão Geral</h1>
+              <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+              <span class="meta">
+                Posted by Robosn Andrade on August 24, 2018
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h2 class="section-heading">O que o DevOps e seu objetivo?</h2>
+            <p>O termo DevOps deriva da junção das palavras "desenvolvimento" (development) e "operações" (operations), sendo uma prática de engenharia de software que possui o intuito de unificar o desenvolvimento de software (Dev) e a operação de software (Ops). A característica principal do movimento DevOps é defender fortemente a automação e monitoramento em todas as fases da construção do software, da integração, teste, liberação para implantação e gerenciamento de infraestrutura. DevOps pretende fornecer, em ciclos de desenvolvimento menores, frequência de implantação aumentada, liberações mais seguras, em alinhamento próximo com os objetivos de negócio.</p> 
+            <p>Os principais objetivos do DevOps são:</p>
+            <ul>
+              <li> Aumentar a frequência de entrega das implementações; </li>
+              <li> Aumentar a velocidade da produção de software; </li>
+              <li> Baixo índice de falhas em novas releases; </li>
+              <li> Diminuir o tempo de espera entre as correções de erros ou novas implementações. </li>
+            </ul>
+            
+            <h2 class="section-heading">Manifesto Agil</h2> 
+            <p>Emboras não seja obrigatório trabalhar com alguma metodologia ágil para trabalhar com DevOps é muito difícil desvincular uma ideia da outro. O sucesso time de DevOps  está fortemente relacionado com os valores do manifesto Ágil:</p>
+            <ul>
+              <li> Indivíduos e interações mais que processos e ferramentas;</li>
+              <li> Software em funcionamento mais que documentação abrangente;</li>
+              <li> Colaboração com o cliente mais que negociação de contratos;</li>
+              <li> Responder a mudanças mais que seguir um plano.</li>
+            </ul>  
+            <p>Não é incomum encontrar times de DevOps trabalhando com boards Kanban ou com Scrum</p>
+            
+            <p>Quais são as principais ferramentas?</p>
+            <p>Existe um numero absurdamente grande de ferramentas que são usadas por equipes de DevOps, por esse motivo talvez nem seja justo eleger uma lista com algumas poucas ferramentas. Mas de qualquer forma existem algumas divisões que fazem muitas dessas ferramentas serem uteis para alguns times e pra outros não. No meu caso a maioria dos times que fiz parte até agora usam AWS(Amazon Web Services) como plataforma, e isso faz com que muitas ferramentas não se façam necessárias já que dentro da AWS temos muitos serviços que executam tarefas similares com custos muito baixos ou zero. Além disso, até por uma questão de redução de custos, tenho enfase em ferramentas grátis, que  muitas vezes são open source, logo essa lista vai seguir essa linha:</p>
+              <ul>
+                <li> Jenkins: Ferramenta de código aberto escrita em Java  que ajuda a automatizar processos com integração continua e entrega continua;</li>
+                <li> Docker: Ferramenta que possibilita a criação de containers capazes de executar a aplicação desejada por inteiro sem a necessidade de instalar  softwares ou configurar componentes no host;</li>
+                <li> Github: Serviço focado em gerenciar repositórios git;</li>
+                <li> Trello: Ferramenta de gerencia de projetos que segue o framework Kanban;</li>
+                <li> Ansible: Ferramenta que automatiza o provisionamento de softwares, gerencia a configuração e a implementação de aplicações; </li>
+                <li> Maven: Ferramenta de automação de compilação usada principalmente para projetos Java;</li>
+                <li> Nexus: Servidor focado em organizar, armazenar e distribuir componentes de software; </li>
+                <li> Vagrant: Ferramenta que permite aos usuários criar e configurar ambientes de desenvolvimento leves, reproduzíveis e portáteis.</li>
+              </ul>
+            <p>Detalhar e exemplificar o uso de cada um dos itens da lista será assunto para posts fututos.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <hr>
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/RobsonAndraDev" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/RobsonAndraDev" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:robsom.s.a@gmail.com" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/RobsonAndradeDev" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; robsonandradev.github.io 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.js"></script>
+  </body>
+</html>
