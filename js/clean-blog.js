@@ -39,3 +39,42 @@
   }
 
 })(jQuery); // End of use strict
+
+function formatDatePt(date) {
+  var months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+  
+  return date.getDate() + ' de ' + months[date.getMonth()] + ' de ' +  date.getFullYear();
+}
+
+$(function () {
+  var content = $('#content');
+  var data = {
+    rss_url: 'https://medium.com/feed/@robsonandradev'
+  };
+  $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+    if (response.status == 'ok') {
+      console.log(response)
+      // var output = '<h1>' + response.feed.title + '</h1>';
+      // var output = '<img src="' + response.feed.image + '" /><br />';
+      var output = '';
+      $.each(response.items, function (k, item) {
+        output += '<div class="col-lg-8 col-md-10 mx-auto"><div class="post-preview">';
+        output += '<a href="' + item.link + '">';
+        output += '<h2 class="post-title">';
+        output += item.title;
+        output += '</h2>';
+        output += '<h3 class="post-subtitle">';
+        // output += item.description;
+        $.each(item.categories, function(l, category) {
+          if('robsonandradev' !== category) {
+            output += '<label>' + category + '</label> ';
+          }
+        });
+        output += '<br /><span class="meta">Publicado em ' + formatDatePt(new Date(item.pubDate)) + '</span>';
+        output += '</h3></a></div>';
+      });
+      content.html(output);
+    }
+  });
+});
