@@ -24,12 +24,12 @@ footer a, header a{
     text-decoration: none;
 }
 
-li:hover{
-    cursor: pointer;
-}
-
 footer{
     padding-left: 30px;
     left: -2px;
     right: -2px;
+}
+
+li:hover, a:hover {
+    cursor: pointer;
 }

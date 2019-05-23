@@ -47,7 +47,7 @@ function formatDatePt(date) {
   return date.getDate() + ' de ' + months[date.getMonth()] + ' de ' +  date.getFullYear();
 }
 
-$(function () {
+function getMediumStories() {
   var content = $('#content');
   var data = {
     rss_url: 'https://medium.com/feed/@robsonandradev'
@@ -79,4 +79,4 @@ $(function () {
       content.html(output);
     }
   });
-});
+}
