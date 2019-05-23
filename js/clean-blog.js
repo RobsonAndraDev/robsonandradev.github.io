@@ -54,25 +54,27 @@ $(function () {
   };
   $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
     if (response.status == 'ok') {
-      console.log(response)
-      // var output = '<h1>' + response.feed.title + '</h1>';
-      // var output = '<img src="' + response.feed.image + '" /><br />';
+      console.log(response);
       var output = '';
+      var label = '<i class="fa fa-tags"></i> ';
       $.each(response.items, function (k, item) {
+        var description = /<h4>(.*?)<\/h4>/g.exec(item.description);
         output += '<div class="col-lg-8 col-md-10 mx-auto"><div class="post-preview">';
         output += '<a href="' + item.link + '">';
         output += '<h2 class="post-title">';
         output += item.title;
         output += '</h2>';
         output += '<h3 class="post-subtitle">';
-        // output += item.description;
+        output += description[1];
         $.each(item.categories, function(l, category) {
           if('robsonandradev' !== category) {
-            output += '<label>' + category + '</label> ';
+            label += '<label class="post-meta art-tag">' + category + '</label> ';
           }
         });
-        output += '<br /><span class="meta">Publicado em ' + formatDatePt(new Date(item.pubDate)) + '</span>';
-        output += '</h3></a></div>';
+        output += '</h3></a>';
+        output += label;
+        output += '<br /><span class="post-meta">Publicado em ' + formatDatePt(new Date(item.pubDate)) + '</span>';
+        output += '</div>';
       });
       content.html(output);
     }
