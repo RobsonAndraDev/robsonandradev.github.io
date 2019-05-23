@@ -60,7 +60,7 @@ function getMediumStories() {
       $.each(response.items, function (k, item) {
         var description = /<h4>(.*?)<\/h4>/g.exec(item.description);
         output += '<div class="col-lg-8 col-md-10 mx-auto"><div class="post-preview">';
-        output += '<a href="' + item.link + '">';
+        output += '<a href="' + item.link + '" target="_blank" >';
         output += '<h2 class="post-title">';
         output += item.title;
         output += '</h2>';
