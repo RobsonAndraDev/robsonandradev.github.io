@@ -58,14 +58,14 @@ function getMediumStories() {
       var output = '';
       var label = '<i class="fa fa-tags"></i> ';
       $.each(response.items, function (k, item) {
-        var description = /<h4>(.*?)<\/h4>/g.exec(item.description);
-        output += '<div class="col-lg-8 col-md-10 mx-auto"><div class="post-preview">';
+        var description = /<(h4|blockquote)>(.*?)<\/(h4|blockquote)>/g.exec(item.description);
+        output += '<div class="post-preview">';
         output += '<a href="' + item.link + '" target="_blank" >';
         output += '<h2 class="post-title">';
         output += item.title;
         output += '</h2>';
         output += '<h3 class="post-subtitle">';
-        output += description[1];
+        output += description[2];
         $.each(item.categories, function(l, category) {
           if('robsonandradev' !== category) {
             label += '<label class="post-meta art-tag">' + category + '</label> ';
