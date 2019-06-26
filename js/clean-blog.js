@@ -76,6 +76,7 @@ function getMediumStories() {
         output += '<br /><span class="post-meta">Publicado em ' + formatDatePt(new Date(item.pubDate)) + '</span>';
         output += '</div>';
         content.html( output );
+        label = "";
       });
     }
   });
