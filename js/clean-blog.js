@@ -41,12 +41,14 @@
 })(jQuery); // End of use strict
 
 function formatDatePt(date) {
-  const months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
   const day = date.getDate();
   const month = months[date.getMonth()];
   const year = date.getFullYear();
-  return `${day} de ${month} de ${year}`;
+  return `${month} ${day}, ${year}`;
 }
 
 const mountLabels = async (categories) => {
@@ -76,7 +78,7 @@ const mountPostsPage = (response) => {
       output += `<h2 class="post-title">${item.title}</h2>`;
       output += `<h3 class="post-subtitle">${subTitle}</h3></a>`;
       output += label;
-      output += `<br /><span class="post-meta">Publicado em ${pubDate}</span>`;
+      output += `<br /><span class="post-meta">published on ${pubDate}</span>`;
       output += '</div>';
       content.html( output );
       label = '<i class="fa fa-tags"></i> ';
