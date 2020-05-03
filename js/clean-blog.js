@@ -78,7 +78,7 @@ const mountPostsPage = (response) => {
       output += `<h2 class="post-title">${item.title}</h2>`;
       output += `<h3 class="post-subtitle">${subTitle}</h3></a>`;
       output += label;
-      output += `<br /><span class="post-meta">published on ${pubDate}</span>`;
+      output += `<br /><span class="post-meta">Published on ${pubDate}</span>`;
       output += '</div>';
       content.html( output );
       label = '<i class="fa fa-tags"></i> ';
