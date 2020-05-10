@@ -1,25 +1,3 @@
 # Robson Andrade
 
-## Portifolio
-
-Trabalhos
-
-## Cursos
-
-Faculdade
-Escola
-
-## Experiencia
-
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
-Empresas
+This repo is used to manage my personal website.
