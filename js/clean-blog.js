@@ -66,22 +66,23 @@ const mountPostsPage = (response) => {
   if (response.status == 'ok') {
     // console.log(response);
     let output = '';
-    let label = '<i class="fa fa-tags"></i> ';
     const items = response.items;
     items.forEach(async item => {
       const description = /<(h4|blockquote)>(.*?)<\/(h4|blockquote)>/g.exec(item.description);
-      const subTitle = description[2];
-      const pubDate = formatDatePt(new Date(item.pubDate));
-      label += await mountLabels(item.categories);
-      output += '<div class="post-preview">';
-      output += `<a href="${item.link}" target="_blank" >`;
-      output += `<h2 class="post-title">${item.title}</h2>`;
-      output += `<h3 class="post-subtitle">${subTitle}</h3></a>`;
-      output += label;
-      output += `<br /><span class="post-meta">Published on ${pubDate}</span>`;
-      output += '</div>';
-      content.html( output );
-      label = '<i class="fa fa-tags"></i> ';
+      if(description) {
+        let label = '<i class="fa fa-tags"></i> ';
+        const subTitle = description[2];
+        const pubDate = formatDatePt(new Date(item.pubDate));
+        label += await mountLabels(item.categories);
+        output += '<div class="post-preview">';
+        output += `<a href="${item.link}" target="_blank" >`;
+        output += `<h2 class="post-title">${item.title}</h2>`;
+        output += `<h3 class="post-subtitle">${subTitle}</h3></a>`;
+        output += label;
+        output += `<br /><span class="post-meta">Published on ${pubDate}</span>`;
+        output += '</div>';
+        content.html( output );
+      }
     });
   }
 };
